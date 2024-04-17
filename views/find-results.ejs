@@ -1,0 +1,11 @@
+<%- include('partials/header.html'); %>
+<main>
+    <h2>Matching Pets</h2>
+    <ul>
+        <% filteredPets.forEach(pet => { %>
+            <li><%= pet %></li>
+        <% }); %>
+    </ul>
+</main>
+
+<%- include('partials/footer.html'); %>

@@ -1,0 +1,10 @@
+undefined:Simese:puppy:male:undefined:undefined
+dog:Simese:puppy:male:undefined:undefinedundefined:Simese:puppy:male:undefined:undefined
+dog:Simese:puppy:male:undefined:undefinedundefined:Simese:puppy:male:undefined:undefined
+dog:Simese:puppy:male:undefined:undefinedundefined:Simese:puppy:male:undefined:undefined
+dog:Simese:puppy:male:undefined:undefinedundefined:Simese:puppy:male:undefined:undefined
+dog:Simese:puppy:male:undefined:undefinedundefined:Simese:puppy:male:undefined:undefined
+undefined:Simese:age: 'puppy', gender: 'male undefined:Simese:puppy:male:undefined:undefined
+undefined:Simese:senior:female:undefined:undefined
+undefined:Simese:puppy:male:undefined:undefined
+undefined:Simese:puppy:male:undefined:undefined

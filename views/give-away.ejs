@@ -1,0 +1,49 @@
+<%- include('partials/header.html'); %>
+    <main>
+        <h2>Have a Pet to Give Away</h2>
+        <form action="#" method="post" onsubmit="return validateGiveAwayForm()">
+            <label for="pet-type">Select Pet Type:</label>
+            <select id="pet-type" name="pet-type">
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+            </select><br>
+
+            <label for="breed">Breed:</label>
+            <input type="text" id="breed" name="breed"><br>
+
+            <label for="age">Age:</label>
+            <select id="age" name="age">
+                <option value="puppy">Puppy/Kitten</option>
+                <option value="young">Young</option>
+                <option value="adult">Adult</option>
+                <option value="senior">Senior</option>
+            </select><br>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select><br>
+
+            <label for="compatibility">Compatibility:</label><br>
+            <input type="checkbox" id="compatibility-dogs" name="compatibility-dogs" value="true">
+            <label for="compatibility-dogs">Gets along with other dogs</label><br>
+            <input type="checkbox" id="compatibility-cats" name="compatibility-cats" value="true">
+            <label for="compatibility-cats">Gets along with other cats</label><br>
+            <input type="checkbox" id="compatibility-children" name="compatibility-children" value="true">
+            <label for="compatibility-children">Suitable for small children</label><br>
+
+            <label for="comment">Comment:</label><br>
+            <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
+
+            <label for="owner-name">Owner's Name:</label>
+            <input type="text" id="owner-name" name="owner-name"><br>
+
+            <label for="owner-email">Owner's Email:</label>
+            <input type="email" id="owner-email" name="owner-email"><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+        </form>
+    </main>
+    <%- include('partials/footer.html'); %>

@@ -1,0 +1,21 @@
+<%- include('partials/header.html'); %>
+<main>
+    <h2>Login</h2>
+    <form action="/login" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        <input type="submit" value="Login">
+    </form>
+    <hr>
+    <h2>Create an Account</h2>
+    <form action="/register" method="POST">
+        <label for="new-username">New Username (letters and digits only):</label>
+        <input type="text" id="new-username" name="newUsername" pattern="[A-Za-z0-9]+" title="Username can contain letters and digits only" required><br>
+        <label for="new-password">New Password (at least 4 characters, letters and digits only):</label>
+        <input type="password" id="new-password" name="newPassword" pattern="(?=.*\d)(?=.*[a-zA-Z]).{4,}" title="Password must be at least 4 characters long and contain at least one letter and one digit" required><br>
+        <input type="submit" value="Create Account">
+    </form>
+</main>
+<%- include('partials/footer.html'); %>

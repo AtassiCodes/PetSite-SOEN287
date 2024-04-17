@@ -1,0 +1,41 @@
+<%- include('partials/header.html'); %>
+    <main>
+        <h2>Find a Dog/Cat</h2>
+        <form action="/find-pets" method="post" onsubmit="return validateFindForm()">
+            <label for="pet-type">Select Pet Type:</label>
+            <select id="pet-type" name="pet-type">
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+            </select><br>
+
+            <label for="breed">Breed:</label>
+            <input type="text" id="breed" name="breed"><br>
+
+            <label for="age">Preferred Age:</label>
+            <select id="age" name="age">
+                <option value="any">Any Age</option>
+                <option value="puppy">Puppy/Kitten</option>
+                <option value="young">Young</option>
+                <option value="adult">Adult</option>
+                <option value="senior">Senior</option>
+            </select><br>
+
+            <label for="gender">Preferred Gender:</label>
+            <select id="gender" name="gender">
+                <option value="any">Any Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select><br>
+
+            <label for="compatibility">Compatibility:</label><br>
+            <input type="checkbox" id="compatibility-dogs" name="compatibility-dogs" value="true">
+            <label for="compatibility-dogs">Gets along with other dogs</label><br>
+            <input type="checkbox" id="compatibility-cats" name="compatibility-cats" value="true">
+            <label for="compatibility-cats">Gets along with other cats</label><br>
+            <input type="checkbox" id="compatibility-children" name="compatibility-children" value="true">
+            <label for="compatibility-children">Suitable for small children</label><br>
+
+            <input type="submit" value="Search">
+        </form>
+    </main>
+    <%- include('partials/footer.html'); %>
